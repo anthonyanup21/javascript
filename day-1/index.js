@@ -46,6 +46,9 @@ v+=10
 console.log(v)//2010
 
 
+let g="20"
+g-=10
+console.log(g)//10
 
 
 
