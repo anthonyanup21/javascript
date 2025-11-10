@@ -1,4 +1,4 @@
-
+//variables
 //1
 function testScope() {
   var p = 1;
@@ -45,4 +45,5 @@ let count = 5;
   console.log(count);//10
 }
 console.log(count);//5
+
 
