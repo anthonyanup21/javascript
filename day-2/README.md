@@ -200,7 +200,9 @@ The defer attribute tells the browser not to block HTML parsing while the script
 It defers the execution of the script until after the HTML document is completely parsed.
 
 ✅ Syntax:
+```html
 <script src="app.js" defer></script>
+```
 
 🧩 How defer Works
 
@@ -209,6 +211,7 @@ The script file starts downloading in the background while the HTML continues to
 Once the HTML document is fully parsed, all deferred scripts are executed in the order they appear.
 
 📊 Without defer
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -218,11 +221,12 @@ Once the HTML document is fully parsed, all deferred scripts are executed in the
     <h1>Hello World</h1>
   </body>
 </html>
-
+```
 
 🧠 The browser stops parsing HTML until app.js is fully loaded and executed.
 
 ⚡ With defer
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -232,7 +236,7 @@ Once the HTML document is fully parsed, all deferred scripts are executed in the
     <h1>Hello World</h1>
   </body>
 </html>
-
+```
 
 ✅ The HTML is parsed first, and app.js runs after the DOM is ready.
 
@@ -258,6 +262,7 @@ Pauses the code execution, and
 Opens the developer tools (DevTools) debugger tab, allowing you to inspect variables, call stacks, and execution flow.
 
 ✅ Syntax:
+```js
 function testDebug() {
   let a = 10;
   let b = 20;
@@ -267,6 +272,7 @@ function testDebug() {
 }
 
 testDebug();
+```
 
 🧠 Explanation:
 
