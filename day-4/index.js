@@ -48,3 +48,35 @@ const name="anup"
 console.log(`hello my name is ${name}`)
 
 
+//Math object in javascript
+
+console.log(Math.round(1.9))
+console.log(Math.ceil(1.01))
+console.log(Math.floor(1.9))
+console.log(Math.sqrt(25))
+console.log(Math.floor(Math.random()*101))
+
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandom(10, 50)); // gives random between 10 and 50
+
+console.log(0/0)//NaN
+
+console.log(8/0)//Infinity
+
+console.log(-8/0)//-Infinity
+
+console.log("1" * "2")//2 type will be number
+console.log("1" + "2")//12 type will be string
+
+console.log("1" - "2")//-1 type will be number
+
+console.log("1"/"2")//0.5 type will be nuber
+
+
+
+
+
+

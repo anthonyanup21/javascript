@@ -121,3 +121,133 @@ To explore more string methods and properties, visit:
 ✅ **Conclusion:**  
 Strings in JavaScript are powerful and flexible.  
 By using **string methods** and the **length property**, you can easily manipulate and extract data from text.
+
+
+
+
+
+# 🧮 JavaScript Math Object & Number Behavior
+
+Today I learned about the **Math object** and how JavaScript handles numbers, random values, and special cases like `NaN` and `Infinity`.
+
+---
+
+## 🔹 Math Object in JavaScript
+
+The **Math object** in JavaScript provides built-in methods for performing mathematical operations such as rounding, generating random numbers, and more.
+
+---
+
+## 🔸 Common Math Methods
+
+### 1. `Math.round()`
+Rounds a number to the **nearest integer**.
+
+```js
+console.log(Math.round(1.9)); // 2
+```
+
+---
+
+### 2. `Math.ceil()`
+Rounds a number **upward** to the nearest integer.
+
+```js
+console.log(Math.ceil(1.01)); // 2
+```
+
+---
+
+### 3. `Math.floor()`
+Rounds a number **downward** to the nearest integer.
+
+```js
+console.log(Math.floor(1.9)); // 1
+```
+
+---
+
+### 4. `Math.sqrt()`
+Returns the **square root** of a number.
+
+```js
+console.log(Math.sqrt(25)); // 5
+```
+
+---
+
+### 5. `Math.random()`
+Generates a random **decimal number** between `0` (inclusive) and `1` (exclusive).
+
+To get a random **integer** between 0 and 100:
+
+```js
+console.log(Math.floor(Math.random() * 101)); // any number between 0–100
+```
+
+---
+
+## 🔹 Generating Random Numbers in a Range
+
+You can create a custom function to generate random integers within any range.
+
+```js
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(getRandom(10, 50)); // gives random number between 10 and 50
+```
+
+---
+
+## 🔸 Special Number Values
+
+### 1. `NaN` (Not a Number)
+Occurs when a mathematical operation fails or produces an undefined result.
+
+```js
+console.log(0 / 0); // NaN
+```
+
+---
+
+### 2. `Infinity` and `-Infinity`
+JavaScript represents numbers beyond finite limits using `Infinity` and `-Infinity`.
+
+```js
+console.log(8 / 0);  // Infinity
+console.log(-8 / 0); // -Infinity
+```
+
+---
+
+## 🔹 Type Conversion in Mathematical Operations
+
+JavaScript automatically converts **strings** to **numbers** when using mathematical operators (except the `+` operator).
+
+---
+
+### 1. Multiplication
+```js
+console.log("1" * "2"); // 2 → type: number
+```
+
+### 2. Addition
+```js
+console.log("1" + "2"); // "12" → type: string (concatenation)
+```
+
+### 3. Subtraction
+```js
+console.log("1" - "2"); // -1 → type: number
+```
+
+### 4. Division
+```js
+console.log("1" / "2"); // 0.5 → type: number
+```
+
+---
+
+
