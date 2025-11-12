@@ -144,7 +144,7 @@ The **Math object** in JavaScript provides built-in methods for performing mathe
 Rounds a number to the **nearest integer**.
 
 ```js
-console.log(Math.round(1.9)); // 2
+console.log(Math.round(1.9)); // round(2.5)=3 and round(2.4)=2
 ```
 
 ---
