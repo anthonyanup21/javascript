@@ -346,4 +346,69 @@ console.log(user);
 
 
 
+# 📘 Finding the Length of an Object in JavaScript
+
+Objects do **not** have a `.length` property like arrays.
+
+To find how many keys (properties) an object has, we use built-in Object methods.
+
+---
+
+# 🔥 1. Using `Object.keys()`
+
+Returns an array of all keys inside the object.
+
+```js
+const user = {
+    name: "anup",
+    age: 22,
+    city: "Mysore"
+};
+
+Object.keys(user);        // ["name", "age", "city"]
+Object.keys(user).length; // 3
+```
+
+✔️ Most common  
+✔️ Simple and readable  
+
+---
+
+# 🔥 2. Using `Object.values()`
+
+Returns an array of all values.
+
+```js
+Object.values(user);        // ["anup", 22, "Mysore"]
+Object.values(user).length; // 3
+```
+
+---
+
+# 🔥 3. Using `Object.entries()`
+
+Returns an array of key-value pairs.
+
+```js
+Object.entries(user);
+// [["name", "anup"], ["age", 22], ["city", "Mysore"]]
+
+Object.entries(user).length; // 3
+```
+
+---
+
+# 🎯 Final Summary
+
+| Method | Returns | Length |
+|--------|---------|--------|
+| `Object.keys(obj)` | Array of keys | Number of properties |
+| `Object.values(obj)` | Array of values | Number of properties |
+| `Object.entries(obj)` | Array of [key, value] pairs | Number of properties |
+
+✔️ Use `Object.keys(obj).length` → best + recommended  
+
+
+
+
 
